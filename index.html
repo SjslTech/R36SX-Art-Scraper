@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,9 +84,12 @@
             <option value="Nintendo_-_Game_Boy_Advance">GBA (Game Boy Advance)</option>
             <option value="Nintendo_-_Game_Boy_Color">GBC (Game Boy Color)</option>
             <option value="Sega_-_Game_Gear">GG (Game Gear)</option>
+			<option value="Sega_-_Master_System_-_Mark_III">SMS (Master System)</option>
             <option value="MAME">MAME (Arcade)</option>
             <option value="Sega_-_Mega_Drive_-_Genesis">MD (Mega Drive / Genesis)</option>
             <option value="SNK_-_Neo_Geo_Pocket_Color">NGPC (Neo Geo Pocket Color)</option>
+			<option value="Bandai_-_WonderSwan">WS (WonderSwan)</option>
+			<option value="Bandai_-_WonderSwan_Color">WSC (WonderSwan Color)</option>
             <option value="NEC_-_PC_Engine_-_TurboGrafx_16">PCE (PC Engine / TurboGrafx)</option>
             <option value="Sony_-_PlayStation">PS (PlayStation)</option>
             <option value="Nintendo_-_Super_Nintendo_Entertainment_System">SFC (Super Famicom / SNES)</option>
@@ -168,7 +172,7 @@
             document.getElementById('log').innerHTML = "";
             log(`--- Initializing Scraper ---`);
 
-            const allowedExtensions = /\.(a26|a78|bin|nes|fds|gb|gba|gbc|gg|sms|fba|md|gen|smd|ngp|ngc|pce|img|iso|cue|pbp|chd|sfc|smc|zip|7z)$/i;
+            const allowedExtensions = /\.(a26|a78|bin|nes|fds|gb|gba|gbc|gg|sms|fba|md|gen|smd|ngp|ngc|ws|wsc|pce|img|iso|cue|pbp|chd|sfc|smc|zip|7z)$/i;
 
             let roms = [];
             let existingImages = new Set();
